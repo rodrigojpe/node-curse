@@ -9,7 +9,7 @@ app.get("/healthz", (req, res) => res.send("Todo está ok"));
 app.get("/healthcheck", (req, res) => res.send("Todo está ok"));
 
 app.get("/api/message", (req, res) =>
-  res.json({ message: "Respuesta desde el backend2" })
+  res.json({ message: "Respuesta,  desde el backend2" })
 );
 
 app.use("**", (req, res) => res.send("ruta no encontrada"));

@@ -1,13 +1,13 @@
-FROM node:alpine3.18
+From node:alpine3.18
 
 ARG dir=backend1
 
-WORKDIR /myapp
+WORKDIR  /myapp
 
 COPY ${dir}/package.json .
 
-RUN npm install
+RUN npm install 
 
 COPY ${dir}/. .
 
-CMD ["npm", "start"]
+CMD ["npm",  "start"]
